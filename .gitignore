@@ -2,3 +2,11 @@
 Thumbs.db
 *.log
 node_modules/
+
+# Local Netlify folder
+.netlify
+
+# Local tooling
+.omc
+.vercel
+.env*
