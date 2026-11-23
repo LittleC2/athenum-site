@@ -3,30 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Athenum | Agência de Marketing Digital</title>
-<meta name="description" content="Athenum é uma agência de marketing digital com foco em resultado. Atuamos em design, tráfego pago, desenvolvimento de sites e sistemas e audiovisual.">
-<link rel="icon" href="assets/img/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<title>Athenum | Agência de marketing digital orientada a resultado</title>
+<meta name="description" content="Agência de marketing digital que une design, tráfego pago, sites e sistemas e audiovisual em uma operação só. Para empresas que querem resultado, não o preço mais baixo.">
+<link rel="canonical" href="https://athenum.site/">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Athenum | Marketing digital orientado a resultado">
+<meta property="og:description" content="Design, tráfego pago, sites e sistemas e audiovisual em uma operação só.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://athenum.site/">
+<meta property="og:image" content="https://athenum.site/assets/img/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Athenum","url":"https://athenum.site/","logo":"https://athenum.site/assets/img/logo-512.png","image":"https://athenum.site/assets/img/og.jpg","description":"Agência de marketing digital: design, tráfego pago, desenvolvimento de sites e sistemas e audiovisual.","email":"contato.athenum@gmail.com","telephone":"+55-21-97664-9091","areaServed":"BR","knowsAbout":["Design","Tráfego pago","Desenvolvimento de sites","Sistemas web","Audiovisual"]}</script>
+<link rel="icon" type="image/svg+xml" href="/assets/img/owl.svg">
+<link rel="icon" type="image/png" href="/assets/img/favicon-64.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/figtree-var.woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+
+<!-- abertura: a coruja surge dentro de um anel que se desenha (só CSS; some sozinha mesmo sem JS) -->
+<div class="loader" aria-hidden="true">
+  <svg class="loader__ring" viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" pathLength="1"/></svg>
+  <img class="loader__owl" src="/assets/img/owl.svg" alt="" width="86" height="96">
+</div>
 
 <canvas id="starfield" aria-hidden="true"></canvas>
 
 <header class="site-header">
   <div class="container">
-    <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Athenum"> Athenum</a>
-    <nav class="nav-links">
-      <a href="index.html">Início</a>
-      <a href="servicos.html">Serviços</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="cases.html">Cases</a>
-      <a href="contato.html">Contato</a>
+    <a href="/" class="brand"><img src="/assets/img/owl.svg" alt="" width="30" height="34"> Athenum</a>
+    <nav class="nav-links" id="menu" aria-label="Principal">
+      <a href="/#servicos">Serviços</a>
+      <a href="/#metodo">Método</a>
+      <a href="/#portfolio">Portfólio</a>
+      <a href="/#sobre">Sobre</a>
+      <a href="/#contato">Contato</a>
     </nav>
     <div class="nav-actions">
-      <a href="contato.html" class="btn btn-primary">Fale conosco</a>
-      <button class="nav-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+      <a href="/#contato" class="btn btn-primary btn-sm">Fale conosco</a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
@@ -34,80 +53,158 @@
 <main>
 
   <section class="hero">
-    <div class="container">
-      <div class="reveal">
+    <div class="container hero__grid">
+      <div class="hero__txt">
         <span class="eyebrow">Marketing digital orientado a resultado</span>
         <h1>Sua empresa não precisa do preço mais baixo. Precisa do resultado certo.</h1>
-        <p class="lead">A Athenum é uma agência de marketing digital que une design, tráfego pago, desenvolvimento de sites e sistemas, e audiovisual em uma única operação, pensada pra empresas que entendem que o mercado digital é o futuro.</p>
+        <p class="lead">Design, tráfego pago, sites e sistemas e audiovisual em uma única operação, pensada para empresas que entendem que o mercado digital é o futuro.</p>
         <div class="hero-actions">
-          <a href="contato.html" class="btn btn-primary">Falar com a Athenum</a>
-          <a href="servicos.html" class="btn btn-ghost">Ver serviços</a>
+          <a href="/#contato" class="btn btn-primary">Falar com a Athenum</a>
+          <a href="/#servicos" class="btn btn-ghost">Ver serviços</a>
         </div>
+      </div>
+      <div class="hero__owl" data-speed="-6" aria-hidden="true">
+        <img src="/assets/img/owl.svg" alt="" width="1490" height="1664" fetchpriority="high">
+      </div>
+    </div>
+    <a href="/#manifesto" class="hero__scroll" aria-label="Rolar para baixo"><span></span></a>
+  </section>
+
+  <section class="manifesto" id="manifesto">
+    <div class="container">
+      <span class="eyebrow">Por que Athenum</span>
+      <p class="fill">Concorrente mais barato sempre vai existir. A pergunta certa não é quanto custa, e sim o que o investimento entrega para a sua empresa no fim do mês.</p>
+    </div>
+  </section>
+
+  <section class="servicos" id="servicos">
+    <div class="servicos__head container">
+      <span class="eyebrow">O que fazemos</span>
+      <h2>Quatro frentes, uma operação só</h2>
+    </div>
+    <div class="servicos__track">
+      <article class="servico" id="design">
+        <span class="servico__n">01</span>
+        <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6L48 30L32 58L16 30Z"/><path d="M32 6V40"/><circle cx="32" cy="42" r="3"/></svg>
+        <h3>Design</h3>
+        <p>Identidade visual e peças que comunicam com clareza, sem modelo pronto e sem genérico.</p>
+        <ul><li>Identidade visual e aplicação de marca</li><li>Peças para redes sociais e campanhas</li><li>Materiais institucionais e comerciais</li></ul>
+      </article>
+      <article class="servico" id="trafego">
+        <span class="servico__n">02</span>
+        <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 54H56"/><path d="M12 44L26 30L36 38L54 16"/><path d="M42 16H54V28"/></svg>
+        <h3>Tráfego pago</h3>
+        <p>Campanhas em Google e Meta com foco em retorno mensurável, não em métrica de vaidade.</p>
+        <ul><li>Estrutura e gestão de campanhas</li><li>Acompanhamento e otimização contínua</li><li>Relatórios com leitura clara de resultado</li></ul>
+      </article>
+      <article class="servico" id="sites">
+        <span class="servico__n">03</span>
+        <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 12H56V52H8Z"/><path d="M8 22H56"/><path d="M26 32L20 38L26 44"/><path d="M38 32L44 38L38 44"/></svg>
+        <h3>Sites e sistemas</h3>
+        <p>Desenvolvimento sob medida, do site institucional ao sistema que sustenta a operação.</p>
+        <ul><li>Sites institucionais e landing pages</li><li>Lojas, catálogos e sistemas web</li><li>Integrações com WhatsApp, CRM e anúncios</li></ul>
+      </article>
+      <article class="servico" id="audiovisual">
+        <span class="servico__n">04</span>
+        <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M6 18H42V48H6Z"/><path d="M42 28L58 18V48L42 38"/><circle cx="24" cy="33" r="7"/></svg>
+        <h3>Audiovisual</h3>
+        <p>Gravação, edição, roteiro e estratégia de conteúdo, do zero à publicação.</p>
+        <ul><li>Roteiros com método e estrutura</li><li>Gravação e edição para redes</li><li>Estratégia de conteúdo recorrente</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="metodo" id="metodo">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Como trabalhamos</span>
+        <h2>Método antes de execução</h2>
+        <p>Cada projeto passa pelas mesmas etapas. É isso que transforma investimento em resultado previsível.</p>
+      </div>
+      <ol class="passos">
+        <li class="passo reveal"><span>01</span><h3>Diagnóstico</h3><p>Entendemos o negócio, o público e o que já foi feito, antes de propor qualquer coisa.</p></li>
+        <li class="passo reveal"><span>02</span><h3>Estratégia</h3><p>Definimos objetivo, canais e indicadores. Você sabe o que esperar e como vai ser medido.</p></li>
+        <li class="passo reveal"><span>03</span><h3>Execução</h3><p>Design, mídia, tecnologia e conteúdo produzidos juntos, apontando para o mesmo resultado.</p></li>
+        <li class="passo reveal"><span>04</span><h3>Ajuste contínuo</h3><p>Acompanhamos de perto e corrigimos a rota com dado, não com achismo.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="diferenciais">
+    <div class="container grid grid-3">
+      <div class="card reveal"><h3>Operação integrada</h3><p>Design, mídia, tecnologia e conteúdo decididos juntos, não em fornecedores separados que não conversam entre si.</p></div>
+      <div class="card reveal"><h3>Decisão orientada a dado</h3><p>Entregas acompanhadas de perto, com ajuste contínuo, não um relatório mensal que ninguém lê.</p></div>
+      <div class="card reveal"><h3>Time enxuto, direto</h3><p>Você fala com quem decide e com quem executa. Sem camadas de atendimento entre o pedido e o resultado.</p></div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-head section-head--row reveal">
+        <div>
+          <span class="eyebrow">Portfólio</span>
+          <h2>Trabalhos recentes</h2>
+        </div>
+        <a href="/cases" class="btn btn-ghost">Ver todos os cases</a>
+      </div>
+      <div class="cases-grid" data-cases="3">
+        <div class="case case--soon reveal"><span class="eyebrow">Em breve</span><h3>Novos cases sendo preparados</h3><p>Estamos organizando os resultados dos nossos clientes para mostrar aqui.</p></div>
       </div>
     </div>
   </section>
 
-  <section class="section-alt">
+  <section class="sobre" id="sobre">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow">O que fazemos</span>
-        <h2>Quatro frentes, uma operação só</h2>
-        <p>Cada entrega é pensada em conjunto: design, mídia, tecnologia e conteúdo trabalhando pro mesmo objetivo.</p>
+        <span class="eyebrow">Sobre a Athenum</span>
+        <h2>Uma operação enxuta, pensada para entregar</h2>
+        <p>A Athenum é conduzida por dois sócios, cada um responsável por uma frente, sem intermediários entre a decisão e a execução.</p>
       </div>
-      <div class="grid grid-4">
-        <div class="card reveal">
-          <div class="icon">01</div>
-          <h3>Design</h3>
-          <p>Identidade visual e peças que comunicam com clareza, sem genérico, sem "modelo pronto".</p>
+      <div class="grid grid-2">
+        <div class="card team-card reveal">
+          <div class="avatar">D</div>
+          <h3>Design, tráfego pago e desenvolvimento</h3>
+          <span class="role">Estratégia visual, mídia e tecnologia</span>
+          <p>Responsável por identidade visual, campanhas de tráfego pago e desenvolvimento de sites e sistemas.</p>
         </div>
-        <div class="card reveal">
-          <div class="icon">02</div>
-          <h3>Tráfego pago</h3>
-          <p>Campanhas em Google e Meta com foco em retorno mensurável, não em métrica de vaidade.</p>
-        </div>
-        <div class="card reveal">
-          <div class="icon">03</div>
-          <h3>Sites e sistemas</h3>
-          <p>Desenvolvimento sob medida, do site institucional ao sistema que sustenta a operação.</p>
-        </div>
-        <div class="card reveal">
-          <div class="icon">04</div>
+        <div class="card team-card reveal">
+          <div class="avatar">A</div>
           <h3>Audiovisual</h3>
-          <p>Gravação, edição, roteiro e estratégia de conteúdo, do zero à publicação.</p>
+          <span class="role">Gravação, edição e estratégia de conteúdo</span>
+          <p>Responsável por gravação, edição, roteiro e estratégia de conteúdo audiovisual.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Por que Athenum</span>
-        <h2>Preço é o que se paga. Valor é o que se leva.</h2>
-        <p>Concorrente mais barato sempre vai existir. A pergunta certa não é quanto custa, e sim o que o investimento entrega.</p>
+  <section class="contato" id="contato">
+    <div class="container grid grid-2 contato__grid">
+      <div class="reveal">
+        <span class="eyebrow">Contato</span>
+        <h2>Vamos conversar sobre o seu próximo passo?</h2>
+        <p class="lead">Conte o que a sua empresa precisa. A gente responde com um caminho claro, normalmente em até 1 dia útil.</p>
+        <ul class="contato__info">
+          <li><span>WhatsApp</span><a href="https://wa.me/5521976649091" target="_blank" rel="noopener">+55 (21) 97664-9091</a></li>
+          <li><span>E-mail</span><a href="mailto:contato.athenum@gmail.com">contato.athenum@gmail.com</a></li>
+        </ul>
       </div>
-      <div class="grid grid-3">
-        <div class="card reveal">
-          <h3>Operação integrada</h3>
-          <p>Design, mídia, tecnologia e conteúdo decididos junto, não em fornecedores separados que não conversam entre si.</p>
+      <form id="form-contato" class="form reveal" action="https://wa.me/5521976649091" method="get" target="_blank">
+        <div class="field"><label for="nome">Nome</label><input id="nome" name="nome" autocomplete="name" required></div>
+        <div class="field"><label for="empresa">Empresa</label><input id="empresa" name="empresa" autocomplete="organization"></div>
+        <div class="field"><label for="servico">Do que você precisa?</label>
+          <select id="servico" name="servico">
+            <option>Ainda não sei, quero conversar</option>
+            <option>Design</option>
+            <option>Tráfego pago</option>
+            <option>Site ou sistema</option>
+            <option>Audiovisual</option>
+            <option>Operação completa</option>
+          </select>
         </div>
-        <div class="card reveal">
-          <h3>Decisão orientada a dado</h3>
-          <p>Campanhas e entregas acompanhadas de perto, com ajuste contínuo, não um relatório mensal que ninguém lê.</p>
-        </div>
-        <div class="card reveal">
-          <h3>Time enxuto, direto</h3>
-          <p>Você fala com quem decide e quem executa. Sem camadas de atendimento entre o pedido e o resultado.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-band">
-    <div class="container reveal">
-      <h2>Vamos conversar sobre o seu próximo passo?</h2>
-      <p>Conte o que a sua empresa precisa. A gente responde com um caminho claro, sem enrolação.</p>
-      <a href="contato.html" class="btn btn-primary">Falar com a Athenum</a>
+        <div class="field"><label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte um pouco sobre o momento da sua empresa"></textarea></div>
+        <label class="check"><input type="checkbox" name="lgpd" required> <span>Concordo com a <a href="/privacidade">política de privacidade</a>.</span></label>
+        <button type="submit" class="btn btn-primary">Enviar pelo WhatsApp</button>
+      </form>
     </div>
   </section>
 
@@ -117,19 +214,18 @@
   <div class="container">
     <div class="footer-top">
       <div>
-        <div class="footer-brand"><img src="assets/img/logo.png" alt="Athenum"> Athenum</div>
-        <p style="max-width:280px">Agência de marketing digital focada em resultado: design, tráfego pago, desenvolvimento e audiovisual.</p>
+        <div class="footer-brand"><img src="/assets/img/owl.svg" alt="" width="25" height="28"> Athenum</div>
+        <p>Agência de marketing digital focada em resultado: design, tráfego pago, desenvolvimento e audiovisual.</p>
       </div>
       <div class="footer-cols">
         <div class="footer-col">
           <h4>Navegação</h4>
           <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="cases.html">Cases</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="privacidade.html">Privacidade</a></li>
+            <li><a href="/#servicos">Serviços</a></li>
+            <li><a href="/#portfolio">Portfólio</a></li>
+            <li><a href="/cases">Cases</a></li>
+            <li><a href="/#contato">Contato</a></li>
+            <li><a href="/privacidade">Privacidade</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -141,9 +237,7 @@
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 Athenum. Todos os direitos reservados.</span>
-    </div>
+    <div class="footer-bottom"><span>© 2026 Athenum. Todos os direitos reservados.</span></div>
   </div>
 </footer>
 
@@ -152,6 +246,9 @@
   <span>WhatsApp</span>
 </a>
 
-<script src="assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" integrity="sha384-B2WBjDzEjJpYvhmi2UyEn7rektqkf5suS6sNoyyrf0EBAwBHdkiXxIlU0V5Ru2ed" crossorigin="anonymous" defer></script>
+<script src="/assets/js/main.js" defer></script>
 </body>
 </html>
