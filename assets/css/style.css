@@ -140,7 +140,7 @@ main > section { position: relative; padding: var(--sec) 0; }
 .servico h3 { font-size: clamp(1.5rem, 2.6vw, 2.2rem); margin-top: 28px; }
 .servico ul { margin: 20px 0 0; padding: 20px 0 0; list-style: none; border-top: 1px solid var(--border); }
 .servico li { padding: 6px 0 6px 22px; position: relative; color: var(--text); font-size: .95rem; }
-.servico li::before { content: ""; position: absolute; left: 0; top: 50%; width: 10px; height: 1px; background: var(--gold); }
+.servico li::before { content: ""; position: absolute; left: 0; top: calc(6px + .82em); width: 10px; height: 1px; background: var(--gold); }
 .ico { width: 56px; height: 56px; fill: none; stroke: var(--gold); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 @media (max-width: 860px) { .servicos__track { grid-template-columns: 1fr; } }
 .hz-on .servicos { height: 100vh; padding: 0; display: flex; flex-direction: column; justify-content: center; overflow: hidden; }
@@ -220,7 +220,7 @@ textarea { resize: vertical; }
 .whatsapp-float:hover { color: #000; background: var(--gold-light); }
 .whatsapp-float svg { width: 20px; height: 20px; }
 .whatsapp-float.hide { opacity: 0; transform: translateY(20px); pointer-events: none; }
-@media (max-width: 640px) { .whatsapp-float span { display: none; } .whatsapp-float { padding: 14px; } }
+@media (max-width: 640px) { .whatsapp-float span { display: none; } .whatsapp-float { right: 14px; bottom: 14px; padding: 12px; border-radius: 50%; } .whatsapp-float svg { width: 22px; height: 22px; } }
 
 /* cursor personalizado (só mouse) */
 .cursor-dot, .cursor-ring { position: fixed; top: 0; left: 0; z-index: 90; pointer-events: none; border-radius: 50%; opacity: 0; transition: opacity .3s; }
@@ -233,3 +233,16 @@ textarea { resize: vertical; }
   .loader { display: none; }
 }
 .footer-brand img { width: auto; height: 28px; }
+
+/* celular: menos respiro nos cards, eyebrow em uma linha, espaço para o botão do WhatsApp não cobrir texto */
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .eyebrow { letter-spacing: .12em; font-size: .72rem; }
+  .servico, .card, .form { padding: 24px 20px; }
+  .servico__n { top: 20px; right: 20px; }
+  .servico h3 { margin-top: 20px; }
+  .section-head { margin-bottom: 36px; }
+  .hero-actions .btn { flex: 1 1 100%; }
+  .passo, .case__body, .case--soon { padding-right: 56px; }
+  .footer-cols { gap: 40px; }
+}
